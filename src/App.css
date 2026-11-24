@@ -17,7 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-  background-color: #002D62; /* Professional Deep Blue */
+  background-color: #002D62;
   color: white;
   position: sticky;
   top: 0;
@@ -27,7 +27,7 @@ body {
 
 .logo {
   font-size: 1.8rem;
-  color: #FFD700; /* Gold */
+  color: #FFD700;
   letter-spacing: 1px;
 }
 
@@ -45,8 +45,9 @@ body {
 
 /* HERO SECTION */
 .hero {
-  height: 70vh;
-  background: linear-gradient(rgba(0, 45, 98, 0.7), rgba(0, 45, 98, 0.7)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80') center/cover;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 45, 98, 0.75), rgba(0, 45, 98, 0.75)), 
+              url('https://res.cloudinary.com/uszpimlu/image/upload/f_auto/q_auto/visa_assistance.webp') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,24 +87,62 @@ body {
   background-color: #ffcc00;
 }
 
-/* ABOUT SECTION */
-.about {
+/* SPLIT SECTIONS (Image + Text) */
+.split-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 80px 10%;
-  text-align: center;
   background-color: white;
+  gap: 50px;
 }
 
-.about h2 {
+.split-section.reverse {
+  background-color: #f9f9f9;
+}
+
+.bg-light {
+  background-color: #f0f4f8;
+}
+
+.split-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.split-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  display: block;
+}
+
+.split-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.split-text h2 {
   color: #002D62;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.about p {
+.split-text p {
   font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
   color: #555;
+  margin-bottom: 20px;
+}
+
+.text-link {
+  color: #002D62;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.text-link:hover {
+  color: #FFD700;
 }
 
 /* SERVICES SECTION */
@@ -266,4 +305,24 @@ body {
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN FOR MOBILE */
+@media (max-width: 768px) {
+  .split-section, .split-section.reverse {
+    flex-direction: column;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .navbar nav a {
+    margin: 0 10px;
+  }
 }

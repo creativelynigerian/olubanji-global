@@ -24,12 +24,30 @@ function App() {
         </div>
       </section>
 
-      {/* ABOUT / COMMITMENT SECTION */}
-      <section id="about" className="about">
-        <h2>Our Commitment</h2>
-        <p>
-          At Olubanji Global Services, our mission is to deliver dependable, professional, and personalized travel solutions that meet the unique needs of each client, making international travel accessible and stress-free.
-        </p>
+      {/* ABOUT / COMMITMENT SECTION (With Image) */}
+      <section id="about" className="split-section">
+        <div className="split-image">
+          <img src="https://res.cloudinary.com/uszpimlu/image/upload/v1795485104/our_commitment.webp" alt="Our Commitment" />
+        </div>
+        <div className="split-text">
+          <h2>Our Commitment</h2>
+          <p>
+            At Olubanji Global Services, our mission is to deliver dependable, professional, and personalized travel solutions that meet the unique needs of each client, making international travel accessible and stress-free.
+          </p>
+        </div>
+      </section>
+
+      {/* TRAVEL PLANNING SECTION (With Image) */}
+      <section className="split-section reverse">
+        <div className="split-text">
+          <h2>Travel Planning</h2>
+          <p>
+            Our experienced consultants offer tailored travel advice, flight reservations, hotel bookings, and travel insurance to make your trip hassle-free from start to finish.
+          </p>
+        </div>
+        <div className="split-image">
+          <img src="https://res.cloudinary.com/uszpimlu/image/upload/v1795484513/banji.webp" alt="Travel Planning" />
+        </div>
       </section>
 
       {/* SERVICES SECTION */}
@@ -50,10 +68,20 @@ function App() {
             <h3>Travel Insurance</h3>
             <p>Protect your journey with comprehensive travel insurance plans, providing peace of mind throughout your travels.</p>
           </div>
-          <div className="service-card">
-            <h3>Travel Planning</h3>
-            <p>Tailored travel advice, flight reservations, hotel bookings, and travel insurance to make your trip hassle-free from start to finish.</p>
-          </div>
+        </div>
+      </section>
+
+      {/* DOCUMENTATION SUPPORT SECTION (With Image) */}
+      <section className="split-section bg-light">
+        <div className="split-image">
+          <img src="https://res.cloudinary.com/uszpimlu/image/upload/f_auto/q_auto/doc_support.webp" alt="Documentation Support" />
+        </div>
+        <div className="split-text">
+          <h2>Documentation Support</h2>
+          <p>
+            From application forms to supporting documents, we assist with every aspect of your travel documentation to ensure a smooth approval process.
+          </p>
+          <a href="#contact" className="text-link">Get in Touch →</a>
         </div>
       </section>
 
